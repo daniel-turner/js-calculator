@@ -153,9 +153,9 @@ exports.calculatorModule = (function () {
 
   var _isValid = function(testNumber) {
 
-    if( typeof testNumber === "number" &&
-        typeof testNumber !== "NaN" &&
-        typeof testNumber !== "Infinity" &&
+    if( typeof testNumber === "number" ||
+        typeof testNumber !== "NaN" ||
+        typeof testNumber !== "Infinity" ||
         typeof testNumber !== "-Infinity") {
 
       return true;
